@@ -1,0 +1,26 @@
+{
+  "name": "tip-to-toe",
+  "version": "1.0.0",
+  "description": "Site designed in mind for Denver's Upscale Nail Salon.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jacksondonovan/Tip-To-Toe.git"
+  },
+  "author": "Jackson Donovan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jacksondonovan/Tip-To-Toe/issues"
+  },
+  "homepage": "https://github.com/jacksondonovan/Tip-To-Toe#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "hbs": "^4.0.1",
+    "path": "^0.12.7"
+  }
+}
