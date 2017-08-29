@@ -1,11 +1,5 @@
 var app = angular.module('app',["ngRoute"])
 
-// app.component('home',{
-//   controller: function($scope){
-//
-//   },
-//   templateUrl: '/templates/home.hbs'
-// })
 
 app.controller('homedisplay',function($scope){
   $scope.message = 'JACKSON DONOVAN'
