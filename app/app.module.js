@@ -1,4 +1,4 @@
-var app = angular.module('app',["ngRouter"])
+var app = angular.module('app',["ngRoute"])
 
 // app.component('home',{
 //   controller: function($scope){
