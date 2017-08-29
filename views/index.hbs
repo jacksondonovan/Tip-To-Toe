@@ -9,7 +9,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="/main.css">
 </head>
-<body>
+<body ng-app="app">
 
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
@@ -23,10 +23,10 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Photos</a></li>
-        <li><a href="#">Contact</a></li>
+        <li class="active"><a href="#/home">Home</a></li>
+        <li><a href="#/about">About</a></li>
+        <li><a href="#/photos">Photos</a></li>
+        <li><a href="#/contact">Contact</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon glyphicon-log-in"></span></a></li>
@@ -35,60 +35,25 @@
   </div>
 </nav>
 
-<div class="jumbotron">
-  <div class="container text-center">
-    <h1>Tip To Toe</h1>
-    <p>Denver's Upscale Nail Salon</p>
-  </div>
-</div>
-
-<div class="container-fluid bg-3 text-center">
-  <h3>Let us help you feel relaxed and refreshed!</h3><br>
-  <div class="row allsame">
-    <div class="col-sm-3">
-      <p>Top Notch Service</p>
-      <img src="https://scontent.fapa1-2.fna.fbcdn.net/v/t1.0-0/c0.0.200.200/p200x200/15109448_1438739532835327_4657250934914176195_n.jpg?oh=f5a0ee7021e372221b1fa5c8ec9388f2&oe=5A2EED1A" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-3">
-      <p>Feel Relaxed. Become Refreshed.</p>
-      <img src="https://scontent.fapa1-2.fna.fbcdn.net/v/t1.0-0/c33.0.200.200/p200x200/10941133_852479048128048_8060116684133003191_n.jpg?oh=ad9bc75ec10da65d3c393696f3801202&oe=5A2F2B80" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-3">
-      <p>Beautiful Winter Styles!</p>
-      <img src="https://scontent.fapa1-2.fna.fbcdn.net/v/t1.0-9/10850183_827825727260047_1539067548837963410_n.jpg?oh=6491deb598d8cdb717948df2c05b429d&oe=5A1853B7" class="img-responsive" style="width:100%; height:290;" alt="Image">
-    </div>
-    <div class="col-sm-3">
-      <p>Panda Nails!!</p>
-      <img src="https://scontent.fapa1-2.fna.fbcdn.net/v/t1.0-9/16114675_1382095325166415_2191957521013734047_n.jpg?oh=cbd8ea284b64a9fc0d54d590a72e0f88&oe=5A5D14AB" class="img-responsive" style="width:100%; height:290;" alt="Image">
+  <div class="jumbotron">
+    <div class="container text-center">
+      <h1>Tip To Toe</h1>
+      <p>Denver's Upscale Nail Salon</p>
     </div>
   </div>
-</div>
-<br>
-<br>
-<br>
 
-<div class="container-fluid bg-3 text-center">
-  <div class="row threesame">
-    <div class="col-sm-4">
+  <main ng-view></main>
+  
 
-      <p>“The massage chairs are great and they really pamper you with lotion, massage and hot stones.”  - Rachel B.</p>
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9XGtq4F-yk-WEDPhl1Vir6_m0ZSMrBz2aH1vdFWYoVgc5BPkVyQ" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-4">
-      <p>“At this location, my favorite girls so far are Michelle who always does my nails and Katie who did my toes!” - Meg F.</p>
-      <img src="http://salon01.com/images/uploads/pages/staff-salon01.jpg" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-4">
-      <p>“Came in after having a terrible shellac manicure done 5 days before and I was WELL taken care of.” - Avery H.</p>
-      <img src="http://www.beliefnet.com/columnists/endingselfsabotage/files/2014/11/woman-1024x878.jpg" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-  </div>
-</div><br><br>
 
-<footer class="container-fluid text-center">
-  <p>Find us on Facebook and Instagram!</p>
-  <img style="height:30px;width:60;" src="https://kimgarst.com/wp-content/uploads/2017/02/facebook-instagram.png" alt="">
-</footer>
 
+  <footer class="container-fluid text-center">
+    <p>Find us on Facebook and Instagram!</p>
+    <img style="height:30px;width:60;" src="https://kimgarst.com/wp-content/uploads/2017/02/facebook-instagram.png" alt="">
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.min.js"></script>
+  <script src="/app.module.js"></script>
 </body>
 </html>
