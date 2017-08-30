@@ -56,3 +56,7 @@ footer {
 a p{
   color:black;
 }
+.open{
+  background-color:#FFF0F0;
+  height:130px; 
+}
