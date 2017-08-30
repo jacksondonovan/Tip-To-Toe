@@ -2,7 +2,17 @@ var app = angular.module('app',["ngRoute"])
 
 
 app.controller('homedisplay',function($scope){
+  const vm = this;
+  vm.jack = 'jack'
   $scope.message = 'JACKSON DONOVAN'
+  $scope.funny = function(){
+    $scope.message = 'HAHA'
+  }
+  console.log('JACKIE')
+})
+
+app.controller('carouselhelper',function($scope){
+  $scope.carouselTitle = 'Featured Styles'
 })
 
 app.config(["$routeProvider",function($routeProvider){
@@ -15,7 +25,8 @@ app.config(["$routeProvider",function($routeProvider){
      templateUrl: '/templates/about.hbs'
    })
    .when('/photos',{
-     templateUrl: '/templates/photos.hbs'
+     templateUrl: '/templates/photos.hbs',
+     controller: 'carouselhelper'
    })
    .when('/contact',{
      templateUrl: '/templates/contact.hbs'

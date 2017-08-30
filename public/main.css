@@ -1,13 +1,32 @@
 .navbar {
   margin-bottom: 0;
   border-radius: 0;
+  background-color: #9400D3;
+}
+
+.jumbotron{
+  background-color: #DDA0DD;
+}
+
+.jumbrotron div{
+  margin-top: -100px;
+}
+
+.smallerjum{
+  height:160px;
+  padding:20px;
+}
+
+main{
+  background-color: #FFF0F0;
+  margin-top: -40px;
 }
 
 footer {
   color:#FFF;
   font-size: 20px;
-  background-color: #000;
-  padding: 25px;
+  background-color: #9400D3;
+  padding: 20px;
 }
 
 .allsame img{
@@ -25,4 +44,12 @@ footer {
   display: flex;
   justify-content: center;
   margin: auto;
+}
+.icons{
+  height:150px;
+  margin: 5px;
+}
+.map{
+  width:60%;
+  height:190px;
 }
