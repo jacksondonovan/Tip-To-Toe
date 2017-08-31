@@ -5,7 +5,11 @@ module.exports = {
     connection: 'postgres://localhost/tiptotoe'
   },
   production: {
-    client: 'postgresql',
-    // connection: 'postgres://jyafkxqkqguzze:25724566de7a6191179d71197f378fe736f4584dd35f93e38a66cc38f2e82c46@ec2-50-19-105-113.compute-1.amazonaws.com:5432/d4abv9i3sgth9a'
+    client: 'pg',
+    connection: {
+      database:'postgres://eqaxxqsmbavpal:41cc04a94c25e2c958922ebdbd6efe477ed52df3ea2527d41acf033fb6c7a158@ec2-54-163-233-201.compute-1.amazonaws.com:5432/d33sqlagfcs7hs',
+      user:     'username',
+      password: 'password'
+    }
   }
 }
