@@ -19,6 +19,7 @@
   "homepage": "https://github.com/jacksondonovan/Tip-To-Toe#readme",
   "dependencies": {
     "body-parser": "^1.17.2",
+    "dotenv": "^4.0.0",
     "express": "^4.15.4",
     "favicon": "0.0.2",
     "hbs": "^4.0.1",
