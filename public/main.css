@@ -19,6 +19,7 @@
 }
 
 main,section{
+  width:100%;
   background-color: #FFF0F0;
   margin-top: -40px;
 }
@@ -75,6 +76,12 @@ a p{
   height:130px;
   margin: 0px;
 }
+.fullwidth{
+  background-color:#FFF0F0;
+  height:130px;
+  width:100%;
+}
+
 form li{
   margin: 10px 4px;
 }
