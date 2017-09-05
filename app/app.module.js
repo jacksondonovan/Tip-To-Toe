@@ -9,7 +9,7 @@ app.controller('homedisplay',function($scope){
 })
 
 app.controller('carouselhelper',function($scope){
-  $scope.carouselTitle = 'Featured Styles'
+  $scope.carouselTitle = 'Click Through Our Featured Styles'
 })
 
 app.config(["$routeProvider",function($routeProvider){
