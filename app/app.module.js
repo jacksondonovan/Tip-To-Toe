@@ -5,9 +5,6 @@ app.controller('homedisplay',function($scope){
   const vm = this;
   vm.jack = 'jack'
   $scope.message = 'JACKSON DONOVAN'
-  $scope.funny = function(){
-    $scope.message = 'HAHA'
-  }
   console.log('JACKIE')
 })
 
