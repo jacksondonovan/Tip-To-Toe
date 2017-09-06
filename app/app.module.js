@@ -12,6 +12,41 @@ app.controller('carouselhelper',function($scope){
   $scope.carouselTitle = 'Click Through Our Featured Styles'
 })
 
+app.controller('dynamichours',function($scope){
+  $scope.hours = 'Our Hours'
+  $scope.today = new Date();
+  $scope.displayHours = '9:30AM - 7:00PM';
+  if($scope.today === 'Wednesday'){
+    console.log('WOWOWOWOWOWOWOOWOWOWOWOWOWOWOWO')
+  }
+  // $scope.whichDay = function($scope.today){
+  //   switch ($scope.today) {
+  //     case 'Sunday':
+  //       $scope.displayHours = '10AM–5:30PM'
+  //       break;
+  //     case 'Monday':
+  //       $scope.displayHours = '9:30AM–7PM'
+  //       break;
+  //     case 'Tuesday':
+  //       $scope.displayHours = '9:30AM–7PM'
+  //       break;
+  //     case 'Wednesday':
+  //       $scope.displayHours = '9:30AM–7PM'
+  //       break;
+  //     case 'Thursday':
+  //       $scope.displayHours = '9:30AM–7PM'
+  //       break;
+  //     case 'Friday':
+  //       $scope.displayHours = '9:30AM–7PM'
+  //       break;
+  //     case 'Saturday':
+  //       $scope.displayHours = '9:30AM–6:30PM'
+  //       break;
+  //     default: $scope.displayHours = '9:30AM–7PM'
+  //   }
+  // }
+})
+
 app.config(["$routeProvider",function($routeProvider){
   $routeProvider
    .when('/home',{
@@ -26,7 +61,8 @@ app.config(["$routeProvider",function($routeProvider){
      controller: 'carouselhelper'
    })
    .when('/contact',{
-     templateUrl: '/templates/contact.hbs'
+     templateUrl: '/templates/contact.hbs',
+     controller: 'dynamichours'
    })
    .otherwise({
      redirectTo: '/home'
