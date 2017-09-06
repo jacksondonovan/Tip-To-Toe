@@ -107,3 +107,9 @@ button{
   top:20px;
  margin-left:-200px;
 }
+.hours li{
+  list-style: none;
+  font-size: 12px;
+  margin-right: 40px;
+  width:100%;
+}
