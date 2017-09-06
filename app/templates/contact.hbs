@@ -30,16 +30,9 @@
       </table>
     <div class="col-sm-2 sidenav">
       <div class="well">
-        <p>Store Hours:</p>
-        <ul class="hours" align="center">
-          <li>Sunday: <br> 10AM–5:30PM</li>
-          <li>Monday: <br>9:30AM–7PM</li>
-          <li>Tuesday: <br>9:30AM–7PM</li>
-          <li>Wednesday: <br>9:30AM–7PM</li>
-          <li>Thursday: <br>9:30AM–7PM</li>
-          <li>Friday: <br>9:30AM–7PM</li>
-          <li>Saturday: <br>9:30AM–6:30PM</li>
-        </ul>
+        <h3>{{hours}}</h3>
+        <h4>{{today | date:'EEEE'}}</h4>
+        <p>{{displayHours}}</p>
       </div>
       <div class="well">
         <p>Call Us</p>
