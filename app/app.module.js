@@ -49,7 +49,7 @@ app.config(["$routeProvider",function($routeProvider){
   $routeProvider
    .when('/home',{
      templateUrl: '/templates/home.hbs',
-     contoller: 'homedisplay'
+     controller: 'dynamichours'
    })
    .when('/about',{
      templateUrl: '/templates/about.hbs',

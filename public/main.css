@@ -116,3 +116,14 @@ button{
 .mapup img{
   margin-top: -150px;
 }
+.flexthis {
+  display: flex;
+  flex-direction: row;
+}
+.flexthis li{
+  list-style: none;
+  font-size: 12px;
+}
+.flexthis .endofall{
+  justify-content: flex-end;
+}
