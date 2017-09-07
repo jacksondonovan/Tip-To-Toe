@@ -1,17 +1,12 @@
 var app = angular.module('app',["ngRoute"])
 
-
-app.controller('homedisplay',function($scope){
-  $scope.message = 'JACKSON DONOVAN'
-  console.log('JACKIE')
-})
-
 app.controller('carouselhelper',function($scope){
   $scope.carouselTitle = 'Click Through Our Featured Styles'
 })
 
 app.controller('dynamichours',function($scope){
   $scope.hours = 'Hours'
+  $scope.nails = 'Professional Grade'
   $scope.today = new Date();
   console.log($scope.today.getDate());
   $scope.whichDay = function(day){
