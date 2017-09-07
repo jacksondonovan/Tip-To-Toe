@@ -8,9 +8,9 @@
 <div class="container-fluid text-center">
   <div class="row content">
     <div class="col-sm-2 sidenav">
-      <p><a href="#">Call Us</a></p>
-      <p><a href="#">#TTTDenver</a></p>
-      <p><a href="#">Send Us An Email</a></p>
+      <p><a href="#">Reviews</a></p>
+      <p><a href="#">Facebook</a></p>
+      <p><a href="#">Instagram</a></p>
     </div>
     <div class="col-sm-8 text-left">
       <h1>Welcome</h1>
@@ -21,10 +21,14 @@
     </div>
     <div class="col-sm-2 sidenav">
       <div class="well">
-        <p>✔️</p>
+        <h3>{{today | date:'EEEE'}}</h3>
+        <h4 style="font-size:20px;">{{hours}}</h4>
+        <p>{{displayHours}}</p>
+        <p>{{whichDay(today.getDay())}}</p>
       </div>
       <div class="well">
-        <p>✔️</p>
+        <p>Call Us</p>
+        <p>(303) 573-0205</p>
       </div>
     </div>
   </div>
