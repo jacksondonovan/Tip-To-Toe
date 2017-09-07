@@ -2,8 +2,6 @@ var app = angular.module('app',["ngRoute"])
 
 
 app.controller('homedisplay',function($scope){
-  const vm = this;
-  vm.jack = 'jack'
   $scope.message = 'JACKSON DONOVAN'
   console.log('JACKIE')
 })
@@ -15,36 +13,34 @@ app.controller('carouselhelper',function($scope){
 app.controller('dynamichours',function($scope){
   $scope.hours = 'Our Hours'
   $scope.today = new Date();
-  $scope.displayHours = '9:30AM - 7:00PM';
-  if($scope.today === 'Wednesday'){
-    console.log('WOWOWOWOWOWOWOOWOWOWOWOWOWOWOWO')
+  console.log($scope.today.getDate());
+  $scope.whichDay = function(day){
+    switch (day) {
+      case 3:
+        $scope.displayHours = '10AM–5:30PM'
+        break;
+      case 4:
+        $scope.displayHours = '9:30AM–7PM'
+        break;
+      case 5:
+        $scope.displayHours = '9:30AM–7PM'
+        break;
+      case 6:
+        $scope.displayHours = '9:30AM–7PM'
+        break;
+      case 7:
+        $scope.displayHours = '9:30AM–7PM'
+        break;
+      case 1:
+        $scope.displayHours = 'TesterTester'
+        break;
+      case 2:
+        $scope.displayHours = '9:30AM–6:30PM'
+        break;
+      default: $scope.displayHours = '9:30AM–7PM'
+    }
   }
-  // $scope.whichDay = function($scope.today){
-  //   switch ($scope.today) {
-  //     case 'Sunday':
-  //       $scope.displayHours = '10AM–5:30PM'
-  //       break;
-  //     case 'Monday':
-  //       $scope.displayHours = '9:30AM–7PM'
-  //       break;
-  //     case 'Tuesday':
-  //       $scope.displayHours = '9:30AM–7PM'
-  //       break;
-  //     case 'Wednesday':
-  //       $scope.displayHours = '9:30AM–7PM'
-  //       break;
-  //     case 'Thursday':
-  //       $scope.displayHours = '9:30AM–7PM'
-  //       break;
-  //     case 'Friday':
-  //       $scope.displayHours = '9:30AM–7PM'
-  //       break;
-  //     case 'Saturday':
-  //       $scope.displayHours = '9:30AM–6:30PM'
-  //       break;
-  //     default: $scope.displayHours = '9:30AM–7PM'
-  //   }
-  // }
+  $scope.displayHours = $scope.whichDay($scope.today.getDate());
 })
 
 app.config(["$routeProvider",function($routeProvider){
